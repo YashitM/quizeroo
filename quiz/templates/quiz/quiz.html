@@ -1,0 +1,22 @@
+{% extends 'quiz/base.html' %}
+{% load list_item %}
+
+{% block title %}Play | Quizeroo{% endblock %}
+
+{% block content %}
+
+<h1>Quiz</h1>
+
+{% for options_list in options %}
+    <h1>Question {{ forloop.counter }} of 15</h1>
+    {{ quizzes | list_item:forloop.counter0 }}
+    
+    
+
+    {% for option in options_list %}
+        {{option}}
+    {% endfor %}
+    
+{% endfor %}
+
+{% endblock %}
