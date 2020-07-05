@@ -137,6 +137,7 @@ button:hover{
     }
     else{
         answerContainers[questionNumber].style.color = 'red';
+        answerContainers[questionNumber].innerHTML += `<span style="margin-bottom: 10px;">Correct Option: ${currentQuestion.correctAnswer}</span>`;
     }
     });
 

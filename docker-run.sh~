@@ -1,0 +1,2 @@
+docker build . -t quizeroo
+docker run quizeroo
