@@ -5,16 +5,24 @@
 
 {% block content %}
 
-<h1>Quiz Categories</h1>
-
-{% for category in categories %}
-    <a href="{% url 'play' category.id %}">
-        <div class="card" style="width: 18rem; margin-bottom: 20px; margin-top: 20px;">
-            <div class="card-body">
-                <p class="card-text">{{ category }}</p>
-            </div>
+<div class="container">
+    <div class="row">
+        <h1 style="margin-top: 30px;">Quiz Categories</h1>
+    </div>
+    <div class="row">
+        {% for category in categories %}
+        <div class="col-lg-4">
+            <a href="{% url 'play' category.id %}">
+                <div class="card" style="width: 18rem; margin-left: 30px; margin-bottom: 20px; margin-top: 20px;">
+                    <div class="card-body">
+                        <p class="card-text">{{ category }}</p>
+                    </div>
+                </div>
+            </a>
         </div>
-    </a>
-{% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
 
 {% endblock %}
