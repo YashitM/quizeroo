@@ -7,7 +7,7 @@
 <h1>Quizzes</h1>
 
 {% for category in categories %}
-    <a href="{% url 'play' category.id %}">{{ category }}</a>
+    <a href="{% url 'play' category.id %}">{{ category }}</a><br>
 {% endfor %}
 
 {% endblock %}

@@ -12,9 +12,9 @@ class Profile(models.Model):
         return self.user.username + ": " + str(self.score)
 
 CATEGORY_CHOICES =( 
-    ("1", "Sports"), 
-    ("2", "Technology"), 
-    ("3", "Space"), 
+    ("1", "Sports"),
+    ("2", "Technology"),
+    ("3", "Space"),
     ("4", "Geography"),
     ("5", "Food"),
 ) 
