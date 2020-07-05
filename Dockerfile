@@ -1,5 +1,5 @@
 FROM python:2.7
-LABEL maintainer "Yashit Maheshwary <yashitmaheshwary@gmail.com>"
+LABEL maintainer "Yashit Maheshwary <yashit@securosoft.com>"
 RUN apt-get update -qq && apt-get install build-essential g++ flex bison gperf ruby perl \ 
   libsqlite3-dev libmariadb-dev-compat libmariadb-dev libfontconfig1-dev libicu-dev libfreetype6 libssl-dev \
   postgresql-client \
